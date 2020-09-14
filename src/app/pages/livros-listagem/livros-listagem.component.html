@@ -1,0 +1,11 @@
+<mat-toolbar color="accent" class="position-fixed">
+  <span>Escolha um livro</span>
+</mat-toolbar>
+
+<div class="listagem">
+  <div *ngFor="let item of livros; let i = index;" class="list-item">
+    <p class="testamento" *ngIf="i == 0">Velho Testamento</p>
+    <p class="testamento" *ngIf="i == 39">Novo Testamento</p>
+    <a mat-stroked-button [routerLink]="['/' + item.abbrev]">{{ item.name }}</a>
+  </div>
+</div>

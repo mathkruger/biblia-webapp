@@ -1,0 +1,11 @@
+<mat-toolbar color="accent" class="position-fixed">
+  <span>{{ livro.name }}</span>
+</mat-toolbar>
+
+<div class="listagem">
+  <div *ngFor="let capitulo of livro.chapters; let i = index;" class="list-item">
+    <a mat-stroked-button [routerLink]="['/' + livro.abbrev + '/' + (i + 1)]">
+      Capítulo {{ i + 1 }}
+    </a>
+  </div>
+</div>

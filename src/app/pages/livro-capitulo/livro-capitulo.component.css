@@ -1,0 +1,14 @@
+p {
+    margin-bottom: 0;
+}
+
+.navegacao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.disabled {
+    opacity: .6;
+    pointer-events: none;
+}

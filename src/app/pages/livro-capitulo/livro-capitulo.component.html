@@ -1,0 +1,14 @@
+<mat-toolbar color="accent" class="position-fixed">
+  <span>{{ livro.name }} - Capítulo {{ cap }}</span>
+</mat-toolbar>
+
+<mat-card>
+  <p *ngFor="let versiculo of livro.chapters[cap - 1]; let j = index;">
+    <small>{{ j + 1 }}</small> {{ versiculo }}
+  </p>
+
+  <div class="navegacao">
+    <a [ngClass]="{'disabled': cap == 1}" mat-stroked-button [routerLink]="['/' + livro.abbrev + '/' + getCapituloAnterior()]">Capítulo Anterior</a>
+    <a [ngClass]="{'disabled': cap >= livro.chapters.length}" mat-stroked-button [routerLink]="['/' + livro.abbrev + '/' + getProximoCapitulo()]">Próximo Capítulo</a>
+  </div>
+</mat-card>
