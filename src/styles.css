@@ -24,8 +24,3 @@ body {
 .listagem .list-item {
     margin: .5rem;
 }
-
-.listagem .list-item .testamento {
-    min-width: calc(100vw - 1rem);
-    font-weight: bold;
-}

@@ -19,7 +19,7 @@
   </p>
 
   <div class="navegacao">
-    <a mat-stroked-button (click)="back();">CapÃ­ulo Anterior</a>
-    <a mat-stroked-button (click)="next();">PrÃ³ximo CapÃ­tulo</a>
+    <a mat-stroked-button (click)="back();">Capítulo Anterior</a>
+    <a mat-stroked-button (click)="next();">Próximo Capítulo</a>
   </div>
 </mat-card>

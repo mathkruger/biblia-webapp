@@ -1,0 +1,5 @@
+.testamento {
+    min-width: calc(100vw - 1rem);
+    font-weight: bold;
+    margin: .5rem;
+}

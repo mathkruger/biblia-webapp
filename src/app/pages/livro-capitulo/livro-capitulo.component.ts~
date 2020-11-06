@@ -33,9 +33,9 @@ export class LivroCapituloComponent implements OnInit {
   }
 
   back() {
-    if(parseInt(this.cap) == 1) {
+    if(this.cap == 1) {
       let livroAnterior = this.service.ObterLivroAnterior(this.abbrev);
-      let capitulo = livroAnterior.chapters.length;
+      let capitulo = capAnterior.chapters.length;
 
       this.router.navigate(['/' + livroAnterior.abbrev + '/' + capitulo]);
     }
@@ -45,7 +45,7 @@ export class LivroCapituloComponent implements OnInit {
   }
 
   next() {
-    if(parseInt(this.cap) >= this.livro.chapters.length) {
+    if(this.cap >= this.livro.chapters.length) {
       let proximoLivro = this.service.ObterProximoLivro(this.abbrev);
       let capitulo = 1;
 

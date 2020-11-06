@@ -10,8 +10,7 @@ export class BibleService {
   bibliaJson: Book[];
 
   constructor() {
-    this.bibliaJson = Array.of(biblia)[0];
-    this.bibliaJson = (<any>this.bibliaJson).default;
+    this.bibliaJson = Array.of(biblia)[0].default;
   }
 
   ListarLivros(): Book[] {

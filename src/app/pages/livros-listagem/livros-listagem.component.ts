@@ -11,10 +11,17 @@ export class LivrosListagemComponent implements OnInit {
 
   livros: Book[] = [];
 
+  vt: Book[] = [];
+  nt: Book[] = [];
+
   constructor(private service: BibleService) {}
 
   ngOnInit() {
     this.livros = this.service.ListarLivros();
+
+    this.vt = this.livros.slice(0, 38);
+    this.nt = this.livros.slice(39);
+
   }
 
 }

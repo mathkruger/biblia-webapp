@@ -1,8 +1,9 @@
 p {
-    margin-bottom: 0;
+    margin-bottom: 5px;
 }
 
 .navegacao {
+    margin-top: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,4 +12,11 @@ p {
 .disabled {
     opacity: .6;
     pointer-events: none;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
